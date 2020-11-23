@@ -1,0 +1,8 @@
+{
+	"directory_name":"enter your desired folder name",
+	"gcp_project_id":"enter default gcp project",
+	"gcp_dataset":"enter default gcp dataset",
+	"dbt_project":"{{cookiecutter.gcp_dataset}}",
+	"dbt_profile":"Enter dbt profile name",
+	"_copy_without_render":["*.html","*.scss","*.sql"]
+}
