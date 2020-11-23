@@ -1,2 +1,3 @@
 gcp_project_id={{cookiecutter.gcp_project_id}}
 gcp_dataset={{cookiecutter.gcp_dataset}}
+PYTHONPATH=workspaces/{{cookiecutter.directory_name}}
