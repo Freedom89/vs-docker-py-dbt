@@ -1,5 +1,13 @@
 # README
 
+# Cookiecutter
+
+You will need to install cookiecutter with the [guide](https://cookiecutter.readthedocs.io/en/1.7.2/installation.html)
+
+```
+cookiecutter https://github.com/Freedom89/vs-docker-py-dbt
+```
+
 You will need to enter 5 inputs:
 
 ```
@@ -15,7 +23,7 @@ You will need to enter 5 inputs:
 to specify with env defaults, you can do this: 
 
 ```
-cookiecutter <link> gcp_project_id=$(gcloud config get-value project)
+cookiecutter https://github.com/Freedom89/vs-docker-py-dbt gcp_project_id=$(gcloud config get-value project)
 ```
 
 # directory_name

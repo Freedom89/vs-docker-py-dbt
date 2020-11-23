@@ -9,6 +9,7 @@ The default dbt database is bigquery.
 * Install the recommended extensions
 * Open command palette
 * Select `remote-containers reubild and reopen in container` option. 
+	* Select from `Dockerfile` 
 
 # Pre-Req
 
