@@ -28,7 +28,7 @@ vars:
 
 
 models:
-  dbt:
+  "{{cookiecutter.dbt_project}}":
     # Applies to all files under models/example/
     example:
       materialized: view
