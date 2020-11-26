@@ -59,5 +59,7 @@ Future to do:
 - add cloudbuild
 - add cloudscheduler
 - add pydash
+- add cli 
+- add github pages
 
 
