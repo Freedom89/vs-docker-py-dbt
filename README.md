@@ -8,15 +8,17 @@ You will need to install cookiecutter with the [guide](https://cookiecutter.read
 cookiecutter https://github.com/Freedom89/vs-docker-py-dbt
 ```
 
-You will need to enter 5 inputs:
+You will need to enter 6 inputs:
 
 ```
 {
 	"directory_name":"enter your desired folder name",
 	"gcp_project_id":"enter default gcp project",
 	"gcp_dataset":"enter default gcp dataset",
+	"dbt_folder":"{{cookiecutter.gcp_dataset}}",
 	"dbt_project":"{{cookiecutter.gcp_dataset}}",
-	"dbt_profile":"Enter dbt profile name",
+	"dbt_profile":"Enter your desired dbt profile",
+	"_copy_without_render":["*.html","*.scss","*.sql"]
 }
 ```
 
