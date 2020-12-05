@@ -5,8 +5,8 @@
       type: bigquery
       method: oauth
       {%- raw %}
-      project: "{{env_var('gcp_project_id')}}"
-      dataset: "{{env_var('gcp_dataset')}}"
+      project: "{{env_var('GCP_PROJECT_ID')}}"
+      dataset: "{{env_var('GCP_DATASET')}}"
       {% endraw -%}
       threads: 4
       timeout_seconds: 300
