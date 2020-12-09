@@ -18,7 +18,7 @@
     "python.linting.enabled": false,
     "python.linting.flake8Enabled": false,
     "editor.tabCompletion": "on",
-    "python.sendSelectionToInteractiveWindow": true,
+    "jupyter.sendSelectionToInteractiveWindow": true,
     "python.formatting.provider": "black",
     "workbench.colorTheme": "Default Dark+",
     "python.linting.mypyEnabled": true,
