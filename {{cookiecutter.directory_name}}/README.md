@@ -26,9 +26,21 @@ Look at [[dbt/README]] on how to use dbt.
 
 ## Using python
 
-For your scripts: [[src/README]] 
-For your notebooks: [[notebooks/README]] 
+* For your scripts: [[src/README]] 
+* For your notebooks: [[notebooks/README]] 
 
-# Env Vars
+## Env Vars
 
 Edit the env vars you need in your docker image. 
+
+# Save without formatting
+
+In the vscode extensions, it is using [this formatter](https://github.com/henriblancke/vscode-dbt-formatter){target="_blank"} which is using [another formatter](https://github.com/henriblancke/dbt-formatter){target="_blank"} under the hood.
+
+
+The current sql dialects only support `snowflake` at the moment, as such you might experience weird behavior when using BQ specific functions such as `SAFE_CAST`. 
+
+To overcome this, just [save without formatting](https://code.visualstudio.com/updates/v1_28#_save-without-formatters){target="_blank"}. In summary there are two options:
+
+* `⌘K S`.
+* `Cmd+⌘+P` to open user settings and select `File: Save without formatting`.

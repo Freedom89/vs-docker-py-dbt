@@ -17,3 +17,7 @@ gcp_auth:
 init_dbt:
 	dbt init $(project_name) --adapter bigquery
 
+DBT_PATH:={{cookiecutter.dbt_folder}}/target/compiled/{{cookiecutter.dbt_project}}/
+DBT_TYPE:=models #analysis #tests
+dry_run:
+	bq query --use_legacy_sql=false --dry_run --flagfile=$$(find $(DBT_PATH) -name $(FILE))
