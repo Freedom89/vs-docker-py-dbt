@@ -1,7 +1,7 @@
 FROM continuumio/miniconda3:4.8.2
-RUN apt-get update -y && apt-get install -y build-essential && apt-get install -y make \
-    curl \
-    && rm -rf /var/lib/apt/lists/*
+RUN apt-get update -y \ 
+  &&  apt-get install -y build-essential make pkg-config libicu-dev curl\
+  && rm -rf /var/lib/apt/lists/*
 
 # Downloading gcloud package
 RUN curl https://dl.google.com/dl/cloudsdk/release/google-cloud-sdk.tar.gz > /tmp/google-cloud-sdk.tar.gz
